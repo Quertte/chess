@@ -44,7 +44,7 @@ function renderChessboard() {
     'Ч Пешка': '♟',
   };
   const chess = generateChessboard();
-  return chess.map((row) => row.map((cell) => emojis[cell]).join(' ')).join('\n');
+  return chess.map((row) => row.map((cell) => emojis[cell]).join('')).join('\n');
   // Тут твой код.
 }
 

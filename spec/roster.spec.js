@@ -1,18 +1,18 @@
 const { generateRoster } = require('../roster');
-describe("Board", function() {
 
-  // Тестов нет :\ 
+describe('Board', () => {
+  // Тестов нет :\
   // Попробуешь написать?
 
-  beforeEach(function() {
+  beforeEach(() => {
     // board = .....
   });
 
-  describe("place header", function() {
-      // Код тут.
+  describe('place header', () => {
+    // Код тут.
   });
 
-  describe("init board", function() {
+  describe('init board', () => {
     // Код тут.
   });
 });
