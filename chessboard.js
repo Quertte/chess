@@ -6,7 +6,7 @@ function generateChessboard() {
   const blackPawns = pawns.map((pawn) => `Ч ${pawn}`);
   const whitePawns = pawns.map((pawn) => `Б ${pawn}`);
   const nullRow = new Array(8).fill(null);
-  const chessBoard = Array.from({ length: 8 }).map((row, i) => {
+  const chessBoard = Array.from({ length: 8 }).map((_, i) => {
     if (i === 0) {
       return blackFigures;
     } if (i === 1) {
@@ -43,7 +43,8 @@ function renderChessboard() {
     'Ч Ладья': '♜',
     'Ч Пешка': '♟',
   };
-
+  const chess = generateChessboard();
+  return chess.map((row) => row.map((cell) => emojis[cell]).join(' ')).join('\n');
   // Тут твой код.
 }
 
